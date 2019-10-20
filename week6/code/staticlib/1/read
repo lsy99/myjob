@@ -1,0 +1,4 @@
+gcc -c aoprand.c base.c
+ar -rc libtest.a aoprand.o base.o
+gcc test.c -o test -L. -ltest
+./test

@@ -1,0 +1,2 @@
+gcc test.c -o test -L../1 -ltest -I../1
+./test

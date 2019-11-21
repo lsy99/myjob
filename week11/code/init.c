@@ -1,4 +1,8 @@
-#include"my.h"
+#include <unistd.h>
+#include <stdlib.h>
+#include<signal.h>
+#include<sys/param.h>
+#include<sys/stat.h>
 void init_deamon(void)
 {
 	pid_t child1,child2;

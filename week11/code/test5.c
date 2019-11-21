@@ -1,12 +1,13 @@
-#include"my.h"
-#include"time.h"
-void init_deamon(void);
+#include <stdio.h>
+#include<time.h>
+
+#include"init.c"
 
 int main()
 {
 FILE *fp;
 time_t t;
-init_deamonn();
+init_deamon();
 while(1)
 	{
 		sleep(10);

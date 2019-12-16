@@ -14,4 +14,14 @@
 #include<sys/wait.h>
 #include<pthread.h>
 
+#define check_error(return_val,msg){\
+		if(return_val !=0){\
+			fprintf(stderr,"%s:%s\n",msg,strerrir(return_val));\
+		exit(-1);}\
+}
+
+#define err_exit(MESSAGE)( \
+	perror(MESSAGE),\
+	exit(1)\
+)
 

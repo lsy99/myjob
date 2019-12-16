@@ -13,7 +13,7 @@
 #include<time.h>
 #include<sys/wait.h>
 #include<pthread.h>
-
+#include<sys/time.h>
 #define check_error(return_val,msg){\
 		if(return_val !=0){\
 			fprintf(stderr,"%s:%s\n",msg,strerrir(return_val));\
